@@ -4,4 +4,7 @@
 
 [node name="Main" type="Node"]
 
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
 [node name="Player" parent="." instance=ExtResource("1_u4e0j")]
