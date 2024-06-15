@@ -14,4 +14,10 @@ func _process(delta):
 
 
 func on_timer_timeout():
-	print("DODO")
+	var player = get_tree().get_first_node_in_group("player") as Node2D
+	if player == null:
+		return
+	
+	var sword_instace = sword_ability.instantiate() as Node2D
+	player.get_parent().add_child(sword_instace)
+	sword_instace.global_position = player.global_position
