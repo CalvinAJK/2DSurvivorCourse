@@ -17,4 +17,3 @@ layer_0/tile_data = PackedInt32Array(-4, 65536, 4, -3, 0, 4, -2, 0, 4, -1, 0, 4,
 [node name="BasicEnemy" parent="." instance=ExtResource("4_qbt06")]
 
 [node name="Player" parent="." instance=ExtResource("1_u4e0j")]
-scale = Vector2(0.135, 0.135)

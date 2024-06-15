@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c8eagv2rwvmd6" path="res://Scenes/Ability/sword_ability_controller/sword_ability_controller.tscn" id="2_e0ota"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g7syx"]
-radius = 40.52
+radius = 7.0
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 0
@@ -16,10 +16,11 @@ script = ExtResource("1_1foun")
 [node name="SwordAbilityController" parent="AbilityManager" instance=ExtResource("2_e0ota")]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.168, 0.168)
 texture = ExtResource("2_7ba7m")
 offset = Vector2(0, -95)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -67)
-scale = Vector2(1.09302, 1.66909)
+position = Vector2(0, -13)
+scale = Vector2(1, 1.92)
 shape = SubResource("CircleShape2D_g7syx")
